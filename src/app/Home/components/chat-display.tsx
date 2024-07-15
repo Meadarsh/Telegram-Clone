@@ -154,7 +154,7 @@ export function MailDisplay({ data, removedata }: any) {
             <EmojiPicker />
           </PopoverContent>
         </Popover>
-        <Input placeholder="Message" className="border-none focus:outline-none focus-visible:outline-none focus-visible:ring-0"/>
+        <Input placeholder="Message" className="border-none shadow-none focus:outline-none focus-visible:outline-none focus-visible:ring-0"/>
         
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
