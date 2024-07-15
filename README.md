@@ -1,11 +1,16 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Shadcn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Library - React
+#Language - TypeScript
+#UI Library - Shadcn (I Prefered ShadCn Over Mui because it is more reliable with Tailwind and Its compenents Have modern Touch )
+#Css Framework - TailwindCss
+#Build Tool - Vite
 
-Currently, two official plugins are available:
+## Getting Started
+### `npm install`
+### `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This Website is based on Ui of Telegram , It is complete responsive site, where both light mode and dark mode are available , 
 
 ## Expanding the ESLint configuration
 

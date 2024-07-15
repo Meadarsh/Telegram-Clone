@@ -77,7 +77,12 @@ export function MailList({ items,sheetState }: MailListProps) {
                       ? "text-white"
                       : "text-forground",
                   )}>{item.creator.name||"User "+index}</h3>
-                  <p className=" text-foreground">
+                  <p className={cn(
+                    "",
+                    mail.selected === item.id
+                      ? "text-white"
+                      : "text-forground",
+                  )}>
                     Latest message
                   </p>
                  </div>

@@ -32,7 +32,7 @@ export function MailDisplay({ data, removedata }: any) {
     removedata();
   };
   return (
-    <div className="flex h-full flex-col">
+    <div className="flex relative h-full flex-col">
       <div className="flex items-center h-16 p-3">
         <div className="flex items-center gap-2">
           <Tooltip>
@@ -84,7 +84,7 @@ export function MailDisplay({ data, removedata }: any) {
       </div>
       <Separator />
       <ScrollArea className="h-full relative overflow-auto">
-        <div className="flex lg:w-[70%] mx-auto p-4 pb-24 gap-2 flex-col">
+        <div className="flex lg:w-[70%] mx-auto p-4 pb-8 gap-2 flex-col">
           {data?.data?.length > 0 ? (
             data.data.map((item: any, index: number) => {
               const currentDate = new Date(item?.updated_at);
@@ -142,8 +142,10 @@ export function MailDisplay({ data, removedata }: any) {
             )}
           </div>
         </div>
-   {mail.selected&&<div className="sticky right-0 lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
-    <div className="flex gap-2 h-12 items-center w-full lg:w-[70%] py-3 px-4 bg-muted lg:rounded-t-md lg:rounded-l-md">
+  
+      </ScrollArea>
+      {mail.selected&&<div className="sticky right-0 lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
+    <div className="flex gap-2 h-14 items-center w-full lg:w-[70%] py-3 px-4 bg-muted lg:rounded-t-md lg:rounded-l-md">
         <Popover>
           <PopoverTrigger asChild>
             <Smile size={25}/>
@@ -152,7 +154,7 @@ export function MailDisplay({ data, removedata }: any) {
             <EmojiPicker />
           </PopoverContent>
         </Popover>
-        <Input className="border-none focus:outline-none focus-visible:outline-none focus-visible:ring-0"/>
+        <Input placeholder="Message" className="border-none focus:outline-none focus-visible:outline-none focus-visible:ring-0"/>
         
         <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -166,7 +168,6 @@ export function MailDisplay({ data, removedata }: any) {
       </DropdownMenu>
       </div>
     </div>}
-      </ScrollArea>
     </div>
   );
 }
