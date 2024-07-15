@@ -60,8 +60,8 @@ export function SidePannel({handleSheetOpenChange}:any) {
         <SheetTrigger asChild className="lg:hidden block">
         <Menu className="ml-3 text-white" />
       </SheetTrigger>
-      <SheetContent className="p-0 littleTransition isolate ">
-        <SheetHeader className=" bg-tbbackground h-44 p-4 items-start">
+      <SheetContent className="p-0 littleTransition">
+        <SheetHeader className=" bg-[#5b8fba] dark:bg-[#233040] h-44 p-4 items-start">
           <div className="my-3 flex w-full items-center pr-2 justify-between">
             <Avatar className="h-16 w-16 ">
               <AvatarImage

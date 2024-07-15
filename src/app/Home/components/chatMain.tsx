@@ -80,7 +80,7 @@ export function Mail({ mails, defaultLayout = [265, 360, 655] }: MailProps) {
         className="h-full max-h-[800px] items-stretch"
       >
          {isMobile && mail.selected ? null : (<ResizablePanel defaultSize={23} minSize={20} maxSize={30}>
-          <div className="flex w-full h-[60px] bg-tbbackground lg:bg-background  items-center pr-3 lg:justify-normal justify-between  gap-5 py-3 lg:py-2">
+          <div className="flex w-full h-[60px] lg:bg-background dark:lg:bg-background bg-[#5b8fba] dark:bg-[#233040]  items-center pr-3 lg:justify-normal justify-between  gap-5 py-3 lg:py-2">
           <Menubar className="border-none hidden lg:block focus:outline-none focus:ring-0 focus:bg-transparent data-[state=open]:bg-transparent bg-transparent shadow-none font-medium text-sm">
           <MenubarMenu>
                 <MenubarTrigger className="border-none focus:outline-none focus:ring-0 focus:bg-transparent data-[state=open]:bg-transparent bg-transparent">

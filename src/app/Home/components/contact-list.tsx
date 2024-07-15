@@ -29,7 +29,7 @@ export function MailList({ items,sheetState }: MailListProps) {
     gsap.to(".wholeList",{
       duration: 0.3,
       ease: "expo.out",
-      scale:sheetState?.94:1,
+      scale:sheetState?.92:1,
     })
    },[sheetState])
   return (

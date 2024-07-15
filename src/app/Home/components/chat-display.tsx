@@ -142,7 +142,7 @@ export function MailDisplay({ data, removedata }: any) {
             )}
           </div>
         </div>
-   {mail.selected&&<div className="absolute lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
+   {mail.selected&&<div className="fixed lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
     <div className="flex gap-2 h-12 items-center w-full lg:w-[70%] py-3 px-4 bg-muted lg:rounded-t-md lg:rounded-l-md">
         <Popover>
           <PopoverTrigger asChild>
