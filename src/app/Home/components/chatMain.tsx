@@ -60,10 +60,17 @@ export function Mail({ mails, defaultLayout = [265, 360, 655] }: MailProps) {
   React.useEffect(() => {
     GetMessages();
   }, [mail.selected]);
-  const Mobile = window.innerWidth < 768;
-  React.useEffect(()=>{
-    setIsMobile(Mobile)
-  },[Mobile])
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const updateSheetState =(val:boolean)=>{
     setSheetState(val)

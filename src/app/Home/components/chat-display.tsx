@@ -108,7 +108,7 @@ export function MailDisplay({ data, removedata }: any) {
                     className={`flex ${item?.sender_id === 1 ? "justify-end" : "justify-start"} `}
                   >
                     <div
-                      className={`lg:max-w-[40%] max-w-[80%] px-2 py-1 font-medium rounded-t-md ${item?.sender_id === 1 ? " rounded-l-md bg-primary text-white" : " rounded-e-md bg-muted text-foreground"} `}
+                      className={`lg:max-w-[40%] max-w-[80%] px-2 py-1 font-normal rounded-t-md ${item?.sender_id === 1 ? " rounded-l-md bg-primary text-white" : " rounded-e-md bg-muted text-foreground"} `}
                     >
                       <p>{item.message}</p>
                       <div className="w-full flex justify-end">
@@ -142,7 +142,7 @@ export function MailDisplay({ data, removedata }: any) {
             )}
           </div>
         </div>
-   {mail.selected&&<div className="fixed lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
+   {mail.selected&&<div className="sticky right-0 lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
     <div className="flex gap-2 h-12 items-center w-full lg:w-[70%] py-3 px-4 bg-muted lg:rounded-t-md lg:rounded-l-md">
         <Popover>
           <PopoverTrigger asChild>
