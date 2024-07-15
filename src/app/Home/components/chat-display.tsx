@@ -83,7 +83,7 @@ export function MailDisplay({ data, removedata }: any) {
         </div>
       </div>
       <Separator />
-      <ScrollArea className="h-full relative overflow-auto">
+      <ScrollArea className="h-[calc(100%-96px)] relative overflow-auto">
         <div className="flex lg:w-[70%] mx-auto p-4 pb-8 gap-2 flex-col">
           {data?.data?.length > 0 ? (
             data.data.map((item: any, index: number) => {
@@ -144,7 +144,7 @@ export function MailDisplay({ data, removedata }: any) {
         </div>
   
       </ScrollArea>
-      {mail.selected&&<div className="sticky right-0 lg:h-20 lg:bg-background bottom-0 w-full flex justify-center">
+      {mail.selected&&<div className="sticky right-0 lg:h-24 lg:bg-background bottom-0 w-full flex items-start justify-center">
     <div className="flex gap-2 h-14 items-center w-full lg:w-[70%] py-3 px-4 bg-muted lg:rounded-t-md lg:rounded-l-md">
         <Popover>
           <PopoverTrigger asChild>
