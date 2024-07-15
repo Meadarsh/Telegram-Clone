@@ -15,3 +15,11 @@
 #### Live Link https://telegram-clone-ochre.vercel.app/
 This Website is based on Ui of Telegram , It is complete responsive site, where both light mode and dark mode are available.
 
+# Key Features
+
+### Light & Dark Mode
+### Responsive Design
+### Chat Screen
+### Emoji picker
+
+
