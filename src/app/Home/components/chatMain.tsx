@@ -42,7 +42,7 @@ export function Mail({ mails, defaultLayout = [265, 360, 655] }: MailProps) {
   const [mail] = useMail();
   const[isMobile,setIsMobile]=React.useState(false)
   const[sheetState,setSheetState]=React.useState(false)
-  const [cookies, setCookie] = useCookies([
+  const [cookie,setCookie] = useCookies([
     "react-resizable-panels:collapsed",
     "react-resizable-panels:layout",
   ]);
@@ -68,7 +68,8 @@ export function Mail({ mails, defaultLayout = [265, 360, 655] }: MailProps) {
   const updateSheetState =(val:boolean)=>{
     setSheetState(val)
   }
-
+ console.log(cookie);
+ 
   return (
     <TooltipProvider delayDuration={0}>
       <ResizablePanelGroup

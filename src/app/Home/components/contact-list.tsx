@@ -6,7 +6,6 @@ import { Avatar } from "@radix-ui/react-avatar";
 import { AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useEffect } from "react";
 import gsap from "gsap";
-import { Separator } from "@/components/ui/separator";
 
 interface MailItem {
   id: string;

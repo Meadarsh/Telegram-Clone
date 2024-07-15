@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 
 export default function MailPage() {
-  const [cookies, setCookie] = useCookies(['react-resizable-panels:layout']);
+  const [cookies] = useCookies(['react-resizable-panels:layout']);
   const defaultLayout = cookies["react-resizable-panels:layout"]   
   const defaultCollapsed =  true 
   const [contacts,setContacts]=useState<any>([])
